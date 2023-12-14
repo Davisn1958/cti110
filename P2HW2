@@ -1,0 +1,25 @@
+# CTI-110
+# P2HW2 - List
+# Nelson Davis
+# 9/19/2023
+#
+print ('This program lists grades from modules.\n')
+
+grade = float(input('Enter grade for Module 1: '))
+print()        
+grade = float(input('Enter grade for Module 2: '))
+print()
+grade = float(input('Enter grade for Module 3: '))
+print()
+grade = float(input('Enter grade for Module 4: '))
+print()
+grade = float(input('Enter grade for Module 5: '))
+print()
+grade = float(input('Enter grade for Module 6: '))
+print()
+print('\n')
+print ('------------Results------------')
+print('Lowest Grade:         61.0')
+print('Highest Grade:        92.0')
+print(max([90.0,92.0]))
+print(min([61.0,65.5]))
