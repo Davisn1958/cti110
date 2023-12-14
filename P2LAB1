@@ -1,0 +1,7 @@
+
+miles_per_gallon = float(input())
+cost_per_gallon = float(input())
+gas_cost_20_miles = 20 / miles_per_gallon * cost_per_gallon
+gas_cost_75_miles = 75 / miles_per_gallon * cost_per_gallon
+gas_cost_500_miles = 500 / miles_per_gallon * cost_per_gallon
+print(f'{gas_cost_20_miles:.2f} {gas_cost_75_miles:.2f} {gas_cost_500_miles:.2f}')
