@@ -1,0 +1,69 @@
+# CTI-110
+# P4HW1 - Score List
+# Nelson Davis
+# 12/4/2023
+#
+
+def main():
+    # Ask the user for the number of scores
+    num_scores = int(input("How many scores do you want like to enter: "))
+
+    # Initialize an empty list to store scores
+    score_list = []
+
+    # Loop to collect scores
+    for i in range(num_scores):
+        valid_score = False
+        while not valid_score:
+            try:
+                # Ask the user to enter a score
+                score = float(input(f"Enter score {i + 1}: "))
+
+                # Check if the score is between 0 and 100
+                if 0 <= score <= 100:
+                    valid_score = True
+                    # Add the valid score to the list
+                    score_list.append(score)
+                else:
+                    print("Invalid score. Please enter a score between 0 and 100.")
+            except ValueError:
+                print("Invalid Score entered!!!!")
+
+                print("Please enter a numeric score.")
+
+    print("--------------Results------------")
+
+    # Display the lowest score entered
+    lowest_score = min(score_list)
+    print(f"\nLowest score: {lowest_score}")
+
+    # Remove the lowest score from the list
+    score_list.remove(lowest_score)
+
+    # Display the modified score list
+    print(f"Modified List: {score_list}")
+
+    # Calculate the average of scores in the modified list
+    average_score = sum(score_list) / len(score_list)
+    print(f"Scores Average: {average_score:.2f}")
+
+    # Determine the letter grade for the calculated average
+    letter_grade = determine_letter_grade(average_score)
+    print(f"Grade: {letter_grade}")
+    print("--------------------------------------")
+
+def determine_letter_grade(average_score):
+    if 90 <= average_score <= 100:
+        return 'A'
+    elif 80 <= average_score < 90:
+        return 'B'
+    elif 70 <= average_score < 80:
+        return 'C'
+    elif 60 <= average_score < 70:
+        return 'D'
+    else:
+        return 'F'
+
+# Call the main function to execute the program
+if __name__ == "__main__":
+    main()
