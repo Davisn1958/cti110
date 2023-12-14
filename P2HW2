@@ -1,0 +1,35 @@
+# CTI-110
+# P2HW2 - List
+# Nelson Davis
+# 10/10/2023
+#
+print ('This program lists grades from modules.\n')
+# Ask the user to enter grades for each module and add them to the list
+grade = float(input('Enter grade for Module 1: '))
+print()        
+grade = float(input('Enter grade for Module 2: '))
+print()
+grade = float(input('Enter grade for Module 3: '))
+print()
+grade = float(input('Enter grade for Module 4: '))
+print()
+grade = float(input('Enter grade for Module 5: '))
+print()
+grade = float(input('Enter grade for Module 6: '))
+print()
+
+# Calculate the lowest grade, highest grade, sum and average
+module_Grade = [65.5, 88, 78.5, 90, 61, 92]
+num_module_Grade = len(module_Grade)
+lowest_Grade = min(module_Grade)
+highest_Grade = max(module_Grade)
+total_grades = sum(module_Grade)
+average_grade = total_grades /len(module_Grade)
+
+#Display the results with formatting
+print ('------------Results------------')
+print(f"Lowest Grade: {lowest_Grade:.2f}")
+print(f"Highest Grade: {highest_Grade:.2f}")
+print(f"Sum of Grades: {total_grades:.2f}")
+print(f"Average Grade: {average_grade:.2f}")
+print('-------------------------------------------')
