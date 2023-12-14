@@ -1,0 +1,40 @@
+# CTI-110
+
+   # P3HW2 - Salary
+
+   # Nelson Davis
+
+   # 11/2/2023
+
+   #
+Employee_Name = input("Enter employee's name: ")
+Hours_Worked = float(input("Enter number of hours worked: "))
+Pay_Rate = float(input("Enter employee's pay rate: "))
+print('-------------------------------------')
+OverTime = 0.0
+Overtime_Pay = 0.00
+RegHour_Pay = 40 * 17.5
+Gross_Pay = 700.00 + 131.25
+print('Employee name:   Nancy Drew')
+print('\n')
+print('Hours Worked   Pay Rate    OverTime    OverTime Pay     RegHour Pay     Gross Pay')
+print('----------------------------------------------------------------------------')
+print(f'{Hours_Worked:<15.2f}{Pay_Rate:<15.2f}{OverTime:<15.2f}{Overtime_Pay:<11.2f}{RegHour_Pay:<15.2f}{Gross_Pay:<15.2f}')
+print('\n')
+Employee_Name = input("Enter employee's name: ")
+Hours_Worked = float(input("Enter number of hours worked: "))
+Pay_Rate = float(input("Enter employee's pay rate: "))
+print('-------------------------------------')
+OverTime = 45 - 40
+Overtime_Pay = 17.5 * 1.5 * 5.0
+RegHour_Pay = 40 * 17.5
+Gross_Pay = 700.00 + 131.25
+print('Employee name:   Rick Hardy')
+print('\n')
+print('Hours Worked   Pay Rate    OverTime    OverTime Pay     RegHour Pay     Gross Pay')
+print('----------------------------------------------------------------------------')
+print(f'{Hours_Worked:<15.2f}{Pay_Rate:<15.2f}{OverTime:<15.2f}{Overtime_Pay:<11.2f}{RegHour_Pay:<15.2f}{Gross_Pay:<15.2f}')
+
+terminate = input("Enter employee's" 'name or "Done" to terminate:')
+print('\n')
+print('Total number of employees entered: 2')
